@@ -13,31 +13,31 @@ __User Story: As a user, I should be able to filter events by city, so that I ca
 ### Feature 2: Show/Hide Event Details
 
 __User Story: As a user, I should be able to show/ hide event details. so that I can easily understand what event interests me.__
-*Scenario 1 - Given events are being displayed; When no event is selected; Then the event elements are collapsed by default.*
-*Scenario 2 - Given that events are being displayed but none are selected yet; When a user selects an event; Then the event element will expand wo show more details.*
-*Scenario 3 - Given an event has been selected and expanded; When a user wants to see LESS information; Then the event element can be collapsed back to default display.*
+  + *Scenario 1 - Given events are being displayed; When no event is selected; Then the event elements are collapsed by default.*
+  + *Scenario 2 - Given that events are being displayed but none are selected yet; When a user selects an event; Then the event element will expand wo show more details.*
+  + *Scenario 3 - Given an event has been selected and expanded; When a user wants to see LESS information; Then the event element can be collapsed back to default display.*
 
 ### Feature 3: Specify Number of Events
 
 __User Story: As a user, I should be able to specify the number of events being displayed so I can control how many events I see.__
-*Scenario 1 - Given user hasn't specified a number of events; When user opens the app; Then 32 events are shown by default.*
-*Scenario 2 - Given the app is opened; When a user chooses a number; Then that number of events is displayed.*
+  + *Scenario 1 - Given user hasn't specified a number of events; When user opens the app; Then 32 events are shown by default.*
+  + *Scenario 2 - Given the app is opened; When a user chooses a number; Then that number of events is displayed.*
 
 ### Feature 4: Use the App When Offline
 
 __User Story: As a user, I should be able to use the app offline, so that I'm not always relying on a steady internet connection for information about events.__
-*Scenario 1 - Given the user opens the app; When there is no internet connection; Then cached data will be displayed.*
-*Scenario 2 - Given the app is open with no internet connection; When the user changes a setting (city, number of events); Then an error will be shown.*
+  + *Scenario 1 - Given the user opens the app; When there is no internet connection; Then cached data will be displayed.*
+  + *Scenario 2 - Given the app is open with no internet connection; When the user changes a setting (city, number of events); Then an error will be shown.*
 
 ### Feature 5: Add an App Shortcut to the Home Screen
 
 __User Story: As a user, I should be able to add a shortcut for this app to my device homescreen so that I can more easily access the app and find events.__
-*Scenario 1 - Given the user wants quick access to the app; When they select the download/install option; Then they can install the Meet app as a shortcut on their device home screen.*
+  + *Scenario 1 - Given the user wants quick access to the app; When they select the download/install option; Then they can install the Meet app as a shortcut on their device home screen.*
 
 ### Feature 6: Display Charts Visualizing Event Details
 
 __User Story: As a user, I should be able to see charts visualizing event details so I can more easily understand and process the information being presented to me by the app.__
-*Scenario 1 - Given the app is open; When events are displayed; Then show a chart with the number of upcoming events in each city.*
+  + *Scenario 1 - Given the app is open; When events are displayed; Then show a chart with the number of upcoming events in each city.*
 
 
 ## Key dependencies:
