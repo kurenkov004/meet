@@ -6,9 +6,9 @@ This is a serverless PWA built with React, using a test-driven development techn
 ### Feature 1: Filter Events by City
 
 __User Story: As a user, I should be able to filter events by city, so that I can see a list of events taking place in that city.__
-*Scenario 1 - Given user hasn't searched for any city; When the user opens the app; Then the user should see a list of upcoming events.*
-*Scenario 2 - Given the main page is open; When user starts typing in the city textbox; Then the user should receive a list of cities (suggestions) that match what they've typed.*
-*Scenario 3 - Given user was typing "Berlin" in the city textbox AND the list of suggested cities is showing; When the user selects a city from the list; Then the city should be changed to that city AND the user should receive a list of upcoming events in that city.*
+  + *Scenario 1 - Given user hasn't searched for any city; When the user opens the app; Then the user should see a list of upcoming events.*
+  + *Scenario 2 - Given the main page is open; When user starts typing in the city textbox; Then the user should receive a list of cities (suggestions) that match what they've typed.*
+  + *Scenario 3 - Given user was typing "Berlin" in the city textbox AND the list of suggested cities is showing; When the user selects a city from the list; Then the city should be changed to that city AND the user should receive a list of upcoming events in that city.*
 
 ### Feature 2: Show/Hide Event Details
 
