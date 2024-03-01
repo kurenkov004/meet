@@ -47,6 +47,7 @@
       const getAuthUrlButton = document.getElementById("getAuthUrlButton");
       const resultElement = document.getElementById("result");
       const resultLink = document.getElementById("authURL");
+
       const getAuthURL = "https://udiwrusn56.execute-api.us-east-2.amazonaws.com/dev/api/get-auth-url";
 
       getAuthUrlButton.onclick = function () {
@@ -84,7 +85,7 @@
           .then(function (json) {
             accessTokenElement.innerText = JSON.stringify(json);
           });
-      }
+      };
 
       const getEvents = document.getElementById("getEvents");
       const events = document.getElementById("events");

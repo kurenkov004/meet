@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 const { google } = require("googleapis");
 const calendar = google.calendar("v3");
@@ -51,6 +51,7 @@ module.exports.getAccessToken = async (event) => {
     });
   })
     .then((results) => {
+      //responds with OAuth token
       return {
         statusCode: 200,
         headers: {
