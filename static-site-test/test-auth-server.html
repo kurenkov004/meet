@@ -58,10 +58,10 @@
           .then(function (json) {
             const result = JSON.stringify(json);
             // we get the value of authUrl
-            const { authUrl } = JSON.parse(result);
+            const { authURL } = JSON.parse(result);
             // then add it to the html
             resultElement.innerText = result;
-            resultLink.href = authUrl;
+            resultLink.href = authURL;
           });
       };
 
