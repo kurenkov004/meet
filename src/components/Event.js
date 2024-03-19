@@ -1,8 +1,26 @@
 // src/components/Event.js
+import { useState } from "react";
 
-const Event = () => {
+const Event = ({ event }) => {
+
+  const [showDetails, setShowDetails] = useState(false);
+
   return (
-    <li></li>
+    <li className="event">
+      <p>{event && event.summary}</p>
+      <p>{event && event.created}</p>
+      <p>{event && event.location}</p>
+      {showDetails ?
+        <p className ="details">{event && event.description}</p>
+        : null
+      }
+      <button 
+        className="details-button"
+        onClick={() => { showDetails ? setShowDetails(false) : setShowDetails(true) }}
+      >
+        show details
+      </button>
+    </li>
   );
 }
 
