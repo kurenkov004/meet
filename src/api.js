@@ -51,8 +51,8 @@ const checkToken = async (accessToken) => {
   return result;
 };
 
-export const getEvents = async () => { //This function will fetch the list of all events
-  if (window.location.href.startsWith('http://localhost')) {
+export const getEvents = async () => {
+  if (window.location.href.startsWith("http://localhost")) {
     return mockData;
   }
 
@@ -60,12 +60,12 @@ export const getEvents = async () => { //This function will fetch the list of al
 
   if (token) {
     removeQuery();
-    const url = "https://udiwrusn56.execute-api.us-east-2.amazonaws.com/dev/api/get-events" + "/" + token;
+    const url =  "https://udiwrusn56.execute-api.us-east-2.amazonaws.com/dev/api/get-events" + "/" + token;
     const response = await fetch(url);
     const result = await response.json();
     if (result) {
       return result.events;
-    } else return null;
+    } else return null; 
   }
 };
 
