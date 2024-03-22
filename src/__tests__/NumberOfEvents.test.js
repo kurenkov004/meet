@@ -1,5 +1,3 @@
-// src/__test__/NumberOfEvents.test.js
-
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import NumberOfEvents from "../components/NumberOfEvents";

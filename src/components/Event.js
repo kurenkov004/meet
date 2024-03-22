@@ -1,4 +1,3 @@
-// src/components/Event.js
 import { useState } from "react";
 
 const Event = ({ event }) => {
