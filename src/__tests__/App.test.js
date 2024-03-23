@@ -1,5 +1,6 @@
 import { render, within } from '@testing-library/react';
 import App from '../App';
+import NumberOfEvents from '../components/NumberOfEvents';
 import userEvent from '@testing-library/user-event';
 import { getEvents } from '../api';
 
@@ -50,5 +51,19 @@ describe('<App /> integration', () => {
     });
 
   });
+
+  test('number of rendered events changes according to user input', async () => {
+    const user = userEvent.setup();
+    const AppComponent = render(<App />);
+    const AppDOM = AppComponent.container.firstChild;
+    const NumberOfEventsDOM = AppDOM.querySelector('#number-of-events');
+    const NumberOfEventsInput = within(NumberOfEventsDOM).queryByRole('textbox');
+
+    await user.type(NumberOfEventsInput, '{backspace}{backspace}10');
+
+    const EventListDOM = AppDOM.querySelector('#event-list');
+    const allRenderedEventItems = within(EventListDOM).queryAllByRole('listitem');
+    expect(allRenderedEventItems.length).toEqual(10);
+  })
 
 });

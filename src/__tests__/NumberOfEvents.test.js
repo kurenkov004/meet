@@ -6,7 +6,8 @@ describe('<NumberOfEvents /> component', () => {
   let NumberOfEventsComponent;
 
   beforeEach(() => {
-    NumberOfEventsComponent = render(<NumberOfEvents />);
+    NumberOfEventsComponent = render(
+    <NumberOfEvents setCurrentNOE={() => {}} />);
   });
 
   test('contains element with role of textbox', () => {
