@@ -52,8 +52,8 @@ export const getAccessToken = async () => {
         "https://udiwrusn56.execute-api.us-east-2.amazonaws.com/dev/api/get-auth-url"
       );
       const result = await response.json();
-      const { authUrl } = result;
-      return (window.location.href = authUrl);
+      const { authURL } = result;
+      return (window.location.href = authURL);
     }
     return code && getToken(code);
   }
