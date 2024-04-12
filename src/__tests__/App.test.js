@@ -54,7 +54,7 @@ describe('<App /> integration', () => {
 
   test('number of rendered events changes according to user input', async () => {
     const user = userEvent.setup();
-    const AppComponent = render(<App />);
+    const AppComponent = render(<App setErrorAlert={() => { }} />);
     const AppDOM = AppComponent.container.firstChild;
     const NumberOfEventsDOM = AppDOM.querySelector('#number-of-events');
     const NumberOfEventsInput = within(NumberOfEventsDOM).queryByRole('textbox');
