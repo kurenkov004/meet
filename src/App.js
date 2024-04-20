@@ -20,11 +20,10 @@ const App = () => {
   useEffect(() => {
     let warningText;
     if (navigator.onLine) {
-      warningText = ""
+      setWarningAlert = ""
     } else {
-      warningText = "you are currently browsing offline - information may not be 100% current"
+      setWarningAlert = "you are currently browsing offline - information may not be 100% current"
     }
-    setWarningAlert(warningText);
     fetchData();
   }, [currentCity, currentNOE]);
 
