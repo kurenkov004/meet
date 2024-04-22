@@ -19,9 +19,9 @@ const App = () => {
 
   useEffect(() => {
     if (navigator.onLine) {
-      setWarningAlert = ("")
+      setWarningAlert("");
     } else {
-      setWarningAlert = ("you are browsing offline - information may not be 100% current")
+      setWarningAlert("You are offline. The displayed list may not be up to date.");
     }
     fetchData();
   }, [currentCity, currentNOE]);
