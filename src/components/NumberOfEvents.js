@@ -32,4 +32,4 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
   );
 }
 
-export default NumberOfEvents;
+export default NumberOfEvents;             
