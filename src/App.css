@@ -2,6 +2,9 @@
 .App {
   text-align: center;
   padding: 2% 5%;
+  background-color: #ededed;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .App * {
@@ -39,7 +42,10 @@ input[type="number"] {
   flex-direction: column;
   margin: auto;
   position: relative;
+  text-decoration-color: #c8ecf7;
 }
+
+
 
 .suggestions {
   width: 250px;
@@ -49,7 +55,7 @@ input[type="number"] {
   align-self: center;
   margin: 0;
   font-size: 14px;
-  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 16px -12px #193338;
 }
 
 .suggestions > li {
@@ -72,19 +78,30 @@ input[type="number"] {
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 1px solid #4f8b9e;
   border-radius: 4px;
   position: relative;
+  background-color: #E6E6E6;
 }
 
-.details-btn {
+.details-button {
   position: absolute;
   right: 5px;
   bottom: 5px;
-  padding: 5px 8px;
-  border-radius: 4px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
   outline: none;
   cursor: pointer;
+  background-color: #4f8b9e;
+  color: #ededed;
+  font-size: 14px;
+  transition-duration: 0.4s;
+}
+
+.details-button:hover {
+  background-color: #72A2B8;
+  color: #ededed;
 }
 
 .alerts-container {
@@ -96,11 +113,28 @@ input[type="number"] {
 }
 
 .charts-container {
+  display: grid;
   grid-template-columns: 1fr 1fr;
+  border: 1px solid #4f8b9e;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #E6E6E6;
 }
 
 @media (max-width: 768px) {
   .charts-container {
     grid-template-columns: 1fr;
   }
+}
+
+.city-events-chart {
+  background-color: #ededed;
+  border-radius: 5px;
+}
+
+
+#main_site_logo {
+  max-width: 50%;
+  height: auto;
 }

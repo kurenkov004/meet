@@ -19,7 +19,7 @@ const CityEventsChart = ({ allLocations, events }) => {
 
 
   return (
-    <ResponsiveContainer width="99%" height={400}>
+    <ResponsiveContainer width="99%" height={400} className = "city-events-chart">
       <ScatterChart
         margin={{
           top: 20,
@@ -34,7 +34,7 @@ const CityEventsChart = ({ allLocations, events }) => {
         />
         <YAxis type="number" dataKey="count" name="Number of events" allowDecimals={false} />
         <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-        <Scatter name="Events" data={data} fill="#8884d8" />
+        <Scatter name="Events" data={data} fill="#4f8b9e" />
       </ScatterChart>
     </ResponsiveContainer>
   );

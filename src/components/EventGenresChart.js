@@ -31,7 +31,7 @@ const EventGenresChart = ({ events }) => {
       <text
         x={x}
         y={y}
-        fill="#8884d8"
+        fill="#265466"
         textAnchor={x > cx ? 'start' : 'end'}
         dominantBaseline="central"
       >
@@ -39,6 +39,8 @@ const EventGenresChart = ({ events }) => {
       </text>
     ) : null;
   };
+
+  const customColors = ['#C3DAE3', '#E3C3C9', '#E3E1C3', '#8E5661', '#265466'];
 
   return (
     <ResponsiveContainer width="99%" height={400}>
@@ -50,7 +52,14 @@ const EventGenresChart = ({ events }) => {
           labelLine={false}
           label={renderCustomizedLabel}
           outerRadius={130}           
-        />
+        >
+          {
+            data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={customColors[index % customColors.length]}/>
+            ))
+          }    
+        </Pie>
+        <Legend layout='horizontal' align='center' verticalAlign='bottom'/>
       </PieChart>
     </ResponsiveContainer>
   );
