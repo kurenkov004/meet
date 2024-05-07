@@ -40,7 +40,7 @@ const EventGenresChart = ({ events }) => {
     ) : null;
   };
 
-  const customColors = ['#C3DAE3', '#E3C3C9', '#E3E1C3', '#8E5661', '#265466'];
+  const customColors = ['#7DABA7', '#9C588A', '#8A7954', '#99504B', '#265466'];
 
   return (
     <ResponsiveContainer width="99%" height={400}>
@@ -59,7 +59,7 @@ const EventGenresChart = ({ events }) => {
             ))
           }    
         </Pie>
-        <Legend layout='horizontal' align='center' verticalAlign='bottom'/>
+        <Legend layout='horizontal' align='center' verticalAlign='bottom' id='pie-chart-leg'/>
       </PieChart>
     </ResponsiveContainer>
   );
