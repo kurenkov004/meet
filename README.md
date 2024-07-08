@@ -4,6 +4,9 @@ This is a serverless PWA built with React, using a test-driven development techn
 
 Serverless development will be done through AWS, using Lambda functions. These functions will help fascilitate Feature #4 - using the app while offline - by providing the user with the cached data. They will also communicate with the Google API in order to manage the authentication processes necessary to fetch event data from it. 
 
+## Deployed Application
+https://kurenkov004.github.io/meet/
+
 ## Project Features & Scenarios
 ### Feature 1: Filter Events by City
 
